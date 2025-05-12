@@ -34,7 +34,7 @@ services:
 16. Go to LED Instances > Effects and set whether to Activate an effect on boot or not.
 17.  Go to Network Services  and disable API Authentication and Local Admin API Authentication.  Don't blame me if this means that someone can hack your lights.
 18.  Go to Effects Configurator.  Using the Delete/Load Effect on the right side, load the effect you want to use and modify it.  Name the table idle effect Preset01 and the table moving effect Preset02.
-19. Go to http://`<raspberry pi ip address>:8080`.  Click the gear settings icon.  Under WLED configuration, put the IP of your raspberry pi (don't use localhost or 127.0.0.1; those don't work for some reason).
+19. Go to `http://<raspberry pi ip address>:8080`.  Click the gear settings icon.  Under WLED configuration, put the IP of your raspberry pi (don't use localhost or 127.0.0.1; those don't work for some reason).
 20. Connect your LED strip's green pin to GPIO 12 on your pi.
 21. Presto, it should be working.  Note that you won't be able to access the LED config within the table website anymore (unlike how Tuan had it coded, which was cool), but you can still modify your presets at the :8090 port mentioned above.
 
