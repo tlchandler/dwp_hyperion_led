@@ -1,4 +1,4 @@
-If you would like to run your LEDs for the wonderful Dune Weaver project off of your Raspberry Pi Zero 2 W instead of off of a separate ESP32, here are the instructions.  Note that if you update to Tuan's excellent software for the Dune Weaver, you will need to do this again.
+If you would like to run your LEDs for the wonderful Dune Weaver project off of your Raspberry Pi Zero 2 W instead of off of a separate ESP32, here are the instructions.  Note that if you update the Dune Weaver software, you will need to do this again.
 
 Note also that this is intended to be a drop-in replacement to the existing led_controller.py such that if the code that calls led_controller.py were to change, this led_controller.py should (in theory) still work.
 
