@@ -23,7 +23,7 @@ services:
 ```
 6. Run `docker build -t hyperion --no-cache .`
 7. Run `docker compose up -d`
-8. Run `docker ps`.  Make a note of the Container ID of your docker for the table software (not the Container ID for the new Hyperion docker.
+8. Run `docker ps`.  Make a note of the Container ID of your docker for the table software (not the Container ID for the new Hyperion docker).
 9. Run `docker exec -ti <table Container ID> sh`
 10. Run `cd modules`
 11. Run `cd led`
