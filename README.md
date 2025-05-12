@@ -29,12 +29,12 @@ services:
 11. Run `cd led`
 12. Replace the contents of led_controller.py with the code at the following link: https://github.com/tlchandler/dwp_hyperion_led/blob/main/led_controller.py.  Note that some of this code was vibe-coded and some of it was human-coded, but it seems to work.  Very importantly, note the comment in the WLED_TO_HYPERION_PRESET_MAP and a change you might want to make.
 13. You can close SSH.
-14. Your Hyperion server should be up and running.  Go to http://<raspberry pi ip address>:8090 .
+14. Your Hyperion server should be up and running.  Go to http://raspberry pi ip address:8090 .
 15. Go to LED Instances > LED Output > LED Controller and set Controller Type to WS281X, GPIO number to 12, and Hardware LED count to 133.
 16. Go to LED Instances > Effects and set whether to Activate an effect on boot or not.
 17.  Go to Network Services  and disable API Authentication and Local Admin API Authentication.  Don't blame me if this means that someone can hack your lights.
 18.  Go to Effects Configurator.  Using the Delete/Load Effect on the right side, load the effect you want to use and modify it.  Name the table idle effect Preset01 and the table moving effect Preset02.
-19. Go to http://<raspberry pi ip address>:8080.  Click the gear settings icon.  Under WLED configuration, put the IP of your raspberry pi (don't use localhost or 127.0.0.1; those don't work for some reason).
+19. Go to http://raspberry pi ip address:8080.  Click the gear settings icon.  Under WLED configuration, put the IP of your raspberry pi (don't use localhost or 127.0.0.1; those don't work for some reason).
 20. Connect your LED strip's green pin to GPIO 12 on your pi.
 21. Presto, it should be working.  Note that you won't be able to access the LED config within the table website anymore (unlike how Tuan had it coded, which was cool), but you can still modify your presets at the :8090 port mentioned above.
 
